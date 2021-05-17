@@ -1,0 +1,10 @@
+<div>
+    <h1>My Goals</h1>
+    <hr>
+    <ul>
+      <li *ngFor='let goal of goals'>
+        {{goal.name}}
+        <app-goal-detail [goal]='goal'></app-goal-detail> // Ensure you have added this in the GoalComponent....
+      </li>
+    </ul>
+  </div>
